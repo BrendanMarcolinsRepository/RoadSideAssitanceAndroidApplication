@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="349dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/usernameRegister"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/edittext_style"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailRegister"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/edittext_style"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegister" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/passwordOneRegister"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edittext_style"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/passwordTwoRegister"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edittext_style"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordOneRegister" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button_style"
+        android:text="Register"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTwoRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
